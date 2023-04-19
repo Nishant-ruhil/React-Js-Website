@@ -6,7 +6,7 @@ import Textform from './components/Textform';
 // import Loginform from './components/loginform';
 
 function App() {
-
+ 
   const [mode , darkMode] = useState('light');
   const [text , setText] = useState('Enable Ligth mode');
   // let handleWriteText = ()=>{

@@ -46,11 +46,15 @@ export default function Textform(props) {
      <div className="mb-3">
        <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark'? 'black' : 'white' , color: props.mode === 'dark'? 'white' : 'black'}} id="Mybox" rows="3"></textarea>
      </div>
-    <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
-    <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>
-    <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear Text</button>
-    <button className="btn btn-primary mx-2" onClick={handleCopy}>Copy Text</button>
-    <button className="btn btn-primary mx-2" onClick={handleRemoveExtraSpaces}>Remove Spaces</button>
+     
+    {/* if (props.mode === 'dark') {
+      
+    } */}
+    <button className="btn btn-outline-warning" onClick={handleUpClick}>Convert to Uppercase</button>
+    <button className="btn btn-outline-warning" onClick={handleLoClick}>Convert to Lowercase</button>
+    <button className="btn btn-outline-warning" onClick={handleClearClick}>Clear Text</button>
+    <button className="btn btn-outline-warning" onClick={handleCopy}>Copy Text</button>
+    <button className="btn btn-outline-warning" onClick={handleRemoveExtraSpaces}>Remove Spaces</button>
     </div>
 
     <div className="container my-4" style={{color: props.mode === 'dark'? 'white' : 'black'}}>
@@ -58,7 +62,7 @@ export default function Textform(props) {
       <p>{text.split(" ").length} words and {text.length} characters</p>
       <p> {0.008 * text.split(" ").length} minutes for reading </p>
       <h2>Preview</h2>
-      <p>{text}</p>
+      <p>{text.length > 0 ?text: "Enter something to preview the text here"}</p>
     </div>
 
     </>
