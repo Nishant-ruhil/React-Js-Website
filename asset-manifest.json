@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Js-Website/wordcounter/static/css/main.e6c13ad2.css",
-    "main.js": "/React-Js-Website/wordcounter/static/js/main.835e9bb4.js",
-    "static/js/787.eb053afd.chunk.js": "/React-Js-Website/wordcounter/static/js/787.eb053afd.chunk.js",
-    "index.html": "/React-Js-Website/wordcounter/index.html",
-    "main.e6c13ad2.css.map": "/React-Js-Website/wordcounter/static/css/main.e6c13ad2.css.map",
-    "main.835e9bb4.js.map": "/React-Js-Website/wordcounter/static/js/main.835e9bb4.js.map",
-    "787.eb053afd.chunk.js.map": "/React-Js-Website/wordcounter/static/js/787.eb053afd.chunk.js.map"
+    "main.css": "/React-Js-Website/tree/main/wordcounter/static/css/main.e6c13ad2.css",
+    "main.js": "/React-Js-Website/tree/main/wordcounter/static/js/main.09a73a63.js",
+    "static/js/787.eb053afd.chunk.js": "/React-Js-Website/tree/main/wordcounter/static/js/787.eb053afd.chunk.js",
+    "index.html": "/React-Js-Website/tree/main/wordcounter/index.html",
+    "main.e6c13ad2.css.map": "/React-Js-Website/tree/main/wordcounter/static/css/main.e6c13ad2.css.map",
+    "main.09a73a63.js.map": "/React-Js-Website/tree/main/wordcounter/static/js/main.09a73a63.js.map",
+    "787.eb053afd.chunk.js.map": "/React-Js-Website/tree/main/wordcounter/static/js/787.eb053afd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.835e9bb4.js"
+    "static/js/main.09a73a63.js"
   ]
 }
