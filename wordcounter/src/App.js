@@ -1,11 +1,15 @@
+import {BrowserRouter , Routes , Route} from 'react-router-dom'
 
-
-// import About from './components/About';
+import About from './components/About';
 import React , {useState} from 'react'
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
-// import Loginform from './components/loginform';
+import Loginform from './components/loginform';
+
+
+
+
 
 
 function App() {
@@ -43,18 +47,29 @@ function App() {
   return (
     <>
    
+       <BrowserRouter>
     <Navbar title="Nishant" about="About Us" mode={mode} text={text}  handleDarkMode = {handleDarkMode}  />
-    <div className="container">
-    <Alert alert={alert} />
+    
+ 
+ 
    
   
+       {/* <Link to="/about" element={<About/>}></Link> */}
        
+       <Routes>
         
-          <Textform showAlert={showAlert} heading="Enter the text to analyze"  mode={mode} />
+        <Route path="/" element={<Textform showAlert={showAlert} heading="Enter the text to analyze"  mode={mode} />}></Route>
+        <Route path="/about" element={<About mode={mode}/>}></Route>
+        <Route path="/Loginform" element={<Loginform/>}></Route>
+       </Routes>
+       </BrowserRouter>
+      
+          
         {/* <About/> */}
         
+        <div className="container">
+    <Alert alert={alert} />
     </div>
-   
    
     </>
   );

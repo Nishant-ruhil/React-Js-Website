@@ -1,7 +1,7 @@
 import React from 'react'
-import './App.css';
+// import './App.css';
 
-export default function Loginform() {
+export default function loginform() {
   return (
     <>
      <h2>LOGIN</h2>

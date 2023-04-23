@@ -1,38 +1,43 @@
-import React, {useState} from 'react'
+import React  from 'react'
 
-export default function About() {
+export default function About(props) {
 
-    const [myStyle , setMyStyle] = useState(
-        {
-                   color: 'black',
-                   backgroundColor: 'white',
-                }
-    )
+    // const [myStyle , setMyStyle] = useState(
+    //     {
+    //                color: 'black',
+    //                backgroundColor: 'white',
+    //             }
+    // )
 
-    const [btnText , setBtnText] = useState("Enable Dark Mode")
-
-    const toogleStyle = ()=>{
-        if(myStyle.color === 'black'){
-            setMyStyle (
-                {
-                    color: 'white',
-                    backgroundColor: 'black',
-                    border: '1px solid white'
-                }
-            )
-            setBtnText("Enabel Light Mode");
-        }
-        else{
-            setMyStyle (
-                {
-                    color: 'black',
-                    backgroundColor: 'white',
-                    border: '1px solid white'
-                }
-            )
-            setBtnText("Enabel Dark Mode");
-        }
+    let myStyle = {
+      color: props.mode === 'light' ? 'black' : 'White' ,
+      backgroundColor: props.mode === 'light' ? 'white' : 'black'
     }
+
+    // const [btnText , setBtnText] = useState("Enable Dark Mode")
+
+    // const toogleStyle = ()=>{
+    //     if(myStyle.color === 'black'){
+    //         setMyStyle (
+    //             {
+    //                 color: 'white',
+    //                 backgroundColor: 'black',
+    //                 border: '1px solid white'
+    //             }
+    //         )
+    //         setBtnText("Enabel Light Mode");
+    //     }
+    //     else{
+    //         setMyStyle (
+    //             {
+    //                 color: 'black',
+    //                 backgroundColor: 'white',
+    //                 border: '1px solid white'
+    //             }
+    //         )
+    //         setBtnText("Enabel Dark Mode");
+    //     }
+    // }
 
 
   return (
@@ -78,9 +83,9 @@ export default function About() {
   </div>
 </div>
 
-<div className="container my-4">
+{/* <div className="container my-4">
 <button className="btn btn-primary "  type="submit" onClick={ toogleStyle }>{btnText}</button>
-</div>
+</div> */}
 </div>    
     </>
   )

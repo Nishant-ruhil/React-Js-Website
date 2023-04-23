@@ -56,11 +56,11 @@ export default function Textform(props) {
     {/* if (props.mode === 'dark') {
       
     } */}
-    <button className="btn btn-outline-warning" onClick={handleUpClick}>Convert to Uppercase</button>
-    <button className="btn btn-outline-warning" onClick={handleLoClick}>Convert to Lowercase</button>
-    <button className="btn btn-outline-warning" onClick={handleClearClick}>Clear Text</button>
-    <button className="btn btn-outline-warning" onClick={handleCopy}>Copy Text</button>
-    <button className="btn btn-outline-warning" onClick={handleRemoveExtraSpaces}>Remove Spaces</button>
+    <button disabled={text.length===0} className="btn btn-outline-warning mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+    <button disabled={text.length===0} className="btn btn-outline-warning mx-1 my-1" onClick={handleLoClick}>Convert to Lowercase</button>
+    <button disabled={text.length===0} className="btn btn-outline-warning mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
+    <button disabled={text.length===0} className="btn btn-outline-warning mx-1 my-1" onClick={handleCopy}>Copy Text</button>
+    <button disabled={text.length===0} className="btn btn-outline-warning mx-1 my-1" onClick={handleRemoveExtraSpaces}>Remove Spaces</button>
     </div>
 
     <div className="container my-4" style={{color: props.mode === 'dark'? 'white' : 'black'}}>
