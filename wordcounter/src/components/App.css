@@ -13,7 +13,7 @@ color: #666666;
 background: #eaeff4;
 }
 
-.wrapper{
+.wrapperx1{
 margin: 0 auto;
 width: 100%;
 max-width: 1140px;
@@ -24,7 +24,7 @@ justify-content: center;
 flex-direction: column;
 }
 
-.container{
+.containerx1{
 position: relative;
 width: 100%;
 max-width: 600px;
@@ -36,20 +36,20 @@ box-shadow: 0 0 5px #700505;
 
 
 
-.login .col-left,
-.login .col-right{
+.loginx1 .col-leftx1,
+.loginx1 .col-rightx1{
 padding: 30px;
 display: flex;
 }
 
 
-.login .col-left{
+.loginx1 .col-leftx1{
     width: 60%;
     clip-path: polygon(0 0, 0% 100%, 100% 0 );
     background: #c8405b;
     }
 
-    .login .col-right{
+    .loginx1 .col-rightx1{
     padding: 60px 30px;
     width: 50%;
     margin-left: -10%;
@@ -57,43 +57,43 @@ display: flex;
     
     
     @media(max-width: 575px){
-        .login .container{
+        .loginx1 .containerx1{
         flex-direction: column;
         box-shadow: none;
         }
-        .login .col-left,
-        .login .col-right{
+        .loginx1 .col-leftx1,
+        .loginx1 .col-rightx1{
         width: 100%;
         margin: 0;
         clip-path: none;
         }
-        .login .col-right{
+        .loginx1 .col-rightx1{
         padding: 30px;
         }
         
         }
 
         
-        .login .login-text{
+        .loginx1 .login-textx1{
         position: relative;
         width: 100%;
         color: #ffffff;
         }
 
-        .login .login-text h2{
+        .loginx1 .login-textx1 h2{
         margin: 0 0 15px 0;
         font-size: 30px;
         font-weight: 700;
         }
 
-        .login .login-text p{
+        .loginx1 .login-textx1 p{
         margin: 0 0 20px 0;
         font-size: 16px;
         font-weight: 500;
         line-height: 22px;
         }
         
-        .login .login-text .btn{
+        .loginx1 .login-textx1 .btnx1{
         display: inline-block;
         font-family: poppins;
         padding: 7px 20px;
@@ -108,50 +108,50 @@ display: flex;
         transition: .3s;
         }
         
-        .login .login-text .btn:hover{
+        .loginx1 .login-textx1 .btnx1:hover{
         color: #2aa199;
         box-shadow: inset 150px 0 0 0 #ffffff;
         }
         
-        .login .login-form{
+        .loginx1 .login-formx1{
         position: relative;
         width: 100%;
         }
-        .login .login-form h2{
+        .loginx1 .login-formx1 h2{
         margin: 0 0 15px 0;
         font-size: 22px;
         font-weight: 700;
         }
-        .login .login-form p{
+        .loginx1 .login-formx1 p{
         margin: 0 0 10px 0;
         text-align: left;
         color: #666666;
         font-size: 15px;
         }
-        .login .login-form p:last-child{
+        .loginx1 .login-formx1 p:last-child{
         margin: 0;
         padding-top: 3px;
         }
-        .login .login-form p a{
+        .loginx1 .login-formx1 p a{
         color: #2aa15f;
         font-size: 14px;
         text-decoration: none;
         }
-        .login .login-form label {
+        .loginx1 .login-formx1 label {
         display: block;
         width: 100%;
         margin-bottom: 2px;
         letter-spacing: .5px;
         }
-        .login .login-form p:last-child label{
+        .loginx1 .login-formx1 p:last-child label{
         width: 60%;
         float: left;
         }
-        .login .login-form label span{
+        .loginx1 .login-formx1 label span{
         color: #ff574e;
         padding-left: 2px;
         }
-        .login .login-form input{
+        .loginx1 .login-formx1 input{
         display: block;
         width: 100%;
         height: 35px;
@@ -160,11 +160,11 @@ display: flex;
         border: 1px solid #cccccc;
         border-radius: 30px;
         }
-        .login .login-form input:focus{
+        .loginx1 .login-formx1 input:focus{
         border-color: #ff574e;
         }
-        .login .login-form button,
-        .login .login-form input[type=submit] {
+        .loginx1 .login-formx1 button,
+        .loginx1 .login-formx1 input[type=submit] {
         display: inline-block;
         width: 100%;
         margin-top: 5px;
@@ -178,8 +178,8 @@ display: flex;
         box-shadow: inset 0 0 0 0 #2aa15f;
         transition: .3s;
         }
-        .login .login-form button:hover,
-        .login .login-form input[type=submit]:hover{
+        .loginx1 .login-formx1 button:hover,
+        .loginx1 .login-formx1 input[type=submit]:hover{
         color: #ffffff;
         box-shadow: inset 250px 0 0 0 #2aa15f;
         }

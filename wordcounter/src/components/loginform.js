@@ -1,22 +1,22 @@
 import React from 'react'
-// import './App.css';
+import './App.css';
 
 export default function loginform() {
   return (
     <>
      <h2>LOGIN</h2>
-        <div className="wrapper login">
-        <div className="container">
-            <div className="col-left">
-                <div className="login-text">
+        <div className="wrapperx1 loginx1">
+        <div className="containerx1">
+            <div className="col-leftx1">
+                <div className="login-textx1">
                     <h2>Welcome!</h2>
                     <p>Create your account.<br/>For Free!</p>
-                    <a href="index2.php" className="btn">Sign Up</a>
+                    <a href="index2.php" className="btnx1">Sign Up</a>
                 </div>
             </div>
 
-            <div className="col-right">
-                <div className="login-form">
+            <div className="col-rightx1">
+                <div className="login-formx1">
                     <h2>Login</h2>
                     <form action="">
                         <p>

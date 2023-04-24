@@ -16,6 +16,7 @@ export default function Textform(props) {
     var Text = document.getElementById("Mybox");
     Text.select();
     navigator.clipboard.writeText(Text.value);
+    document.getSelection().removeAllRanges();
     props.showAlert("Copy to Clipboard","success");
   }
 
@@ -48,7 +49,7 @@ export default function Textform(props) {
   return (
     <>
     <div className="container" style={{color: props.mode === 'dark'? 'white' : 'black'}}>
-       <h1 >{props.heading}</h1>
+       <h1 className='my-4'>{props.heading}</h1>
      <div className="mb-3">
        <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark'? 'black' : 'white' , color: props.mode === 'dark'? 'white' : 'black'}} id="Mybox" rows="8"></textarea>
      </div>

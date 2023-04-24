@@ -53,6 +53,9 @@ function App() {
  
  
    
+        
+    <Alert alert={alert} />
+  
   
        {/* <Link to="/about" element={<About/>}></Link> */}
        
@@ -67,9 +70,6 @@ function App() {
           
         {/* <About/> */}
         
-        <div className="container">
-    <Alert alert={alert} />
-    </div>
    
     </>
   );
